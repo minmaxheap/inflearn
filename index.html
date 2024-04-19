@@ -7,6 +7,73 @@
   <title>Document</title>
 </head>
 <body>
+  <!--다른 곳으로의 링크 -->  
+  target의 속성 값
+  _self
+  _blank
+  _parent (iframe 사용할 때)
+  _top (iframe 사용할 때)
+  <a>
+    <img> 이미지를 클릭해서 특정 사이트로 넘어가는 것
+  </a>
+  a #id를 붙이면, 링크 넘어갈 때 그 요소로 포커스가 가도록 할 수 있음
+
+  <address>Contants, 웹사이트 주소, 전화, 이메일</address>
+  <!--표 사용하기 -->
+  <table>
+    <tr>
+      테이블의 행
+    </tr>
+    <td>
+      테이블의 데이터 셀
+    </td>
+    각 th가 어떤 것의 머리가 되는지 알려주는 속성
+    scope=row (행의 머리)
+    scope=col (열의 머리)
+    이런 것도 신경써야함.
+  </table>
+  emmet   table>(tr>td{1}*4)*4
+  <table>
+    <colgroup>
+      <col class="weekend">
+      <col span="5">
+      <col class="weekend">
+      //그룹 지어서 css 적용 시키고 싶을 때 사용
+    </colgroup>
+    <tr>
+      <td>1</td>
+      <td colspan="2">1 : 2개의 칸을 차지하겠다</td>
+      <!-- <td>1</td> -->
+      <td>1</td>
+    </tr>
+    <tr>
+      <td rowspan="3">1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td colspan="2" rowspan="2">1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </table>
+  
+  <!--이미지 넣기 -->
+  src : 절대 경로(D:\~~) 혹은 상대 경로 (./, ../)
+  alt : 대체 텍스트
+  title : 툴팁 (alt의 대체나 반복이 되어서는 안 된다. mdn 공식 문서)
+  width, height : '픽셀'단위 (둘 중 하나만 하면 비율 대로 나머지 하나가 조정된다.)
+  맵 기능 (전국 지도에서 강원도 클릭하면 강원도 소속 지역이 뜨는 기능 만들 때 사용)
+
+
   <!-- 나열되는 요소들 -->
   <!-- dl>(dt+dd)*3 -->
   <dl>
