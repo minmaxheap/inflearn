@@ -7,6 +7,43 @@
   <title>Document</title>
 </head>
 <body>
+  <!-- 사용자로부터 입력 받기 3 -->   
+  text area : cols (글자수 단위의 너비 20자 들어간다), rows(표시되는 줄 수) => css로 할 수 있다.
+  value로 기본값을 작성하는 게 아니라, contents다.
+  mdn에서 엄지가 거꾸로 되어 있는 속성은 사용을 피하라는 뜻
+  여는 태그와 닫는 태크 사이에 엔터치면 placeholder가 안 보이는 경우가 있을 거다.
+
+  <select name="" id=""> select 태그 multiple 속성을 넣으면 shift 키 누르고 여러 개 선택 가능
+    <option value="">
+    </option>
+  </select>
+  select 안에 있는 걸 그룹핑도 가능 (optiongroup)
+
+  dataList는 샘플 값들이 있다. 
+  select와 datalist의 차이는 선택값을 주거나, 권장하는 선택값의 차이
+
+  progress : 50% (스크린 리더를 위한 값) : 동적인 값
+  meter : 캐릭터 능력치 같은 고정된 값을 보여줌 , optimum과 비교했을 때 어떤 값이 좋은 값인지 보여줌 (신호등)
+  low, high (전체적인 값을 3등분함)
+  
+
+  
+  <!-- 사용자로부터 입력 받기 2 --> 
+  placeHolder 빈칸에 들어갈 안내 메시지
+  minLength, maxLength submit 거부됨
+
+  브라우저나 모바일마다 태그에 따른 ui가 어떻게 뜨는지는 다르다. 디테일이 조금씩 다른데, 브라우저가 해석하는 방식이 다르기 때문.
+
+  checkbox에 checked 해놓으면 맨 처음 켰을 때 체크되어있을지 여부
+
+  라디오 name : 그룹핑할 네임
+
+  인풋 타입이 file일 경우 어떤 유형의 파일만 선택 가능한지 지정할 수 있다. multiple 속성도 넣어서 여러 파일 넣을 수 있다.
+
+  사용자한테 보여줄 건 아니고, 사용자 등급 같은 걸 넣어놓을 수 있다.
+  value를 처음에 지정해두면, 그게 전송된다. (default 값)
+  auto focus 자동 포커스 된다. 
+  read only (전송됨) 와 disabled (전송 안 됨) required (필수 입력)
   <!-- 사용자로부터 입력 받기 1 -->    
   legend fieldset의 제목
   fieldset은 여러 개 input을 묶어줄 수 있다
